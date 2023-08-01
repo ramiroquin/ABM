@@ -1,4 +1,4 @@
-# PruebaEvoltis
+# ABM
 ## Descripción
 Esta API REST desarrollada con .NET permite realizar operaciones ABM (alta, baja, modificar) sobre recursos específicos. Esta creada con el enfoque Code First de Entity Framework por lo tanto no tenes que rediseñar la base de datos.
 
