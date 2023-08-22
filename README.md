@@ -1,42 +1,42 @@
-# ABM
-## Descripción
-Esta API REST desarrollada con .NET permite realizar operaciones ABM (alta, baja, modificar) sobre recursos específicos. Esta creada con el enfoque Code First de Entity Framework por lo tanto no tenes que rediseñar la base de datos.
+# CRUD
+## Description
+This REST API developed with .NET allows you to perform CRUD (create,read, update, delete) operations on specific resources. It is created with the Entity Framework Code First approach so you don't have to redesign the database.
 
-## Endpoints y Métodos
-A continuación, se describen los endpoints disponibles junto con los métodos HTTP que se pueden utilizar:
+## Endpoints and Methods
+The available endpoints are described below along with the HTTP methods that can be used:
 
-### Obtener todos los usuarios
-#### Método: GET
-- URL: /api/Usuario/Listar
-- Descripción: Obtiene todos los usuarios que existen en la base de datos.
-### Obtener un usuario por su ID
-#### Método: GET
-- URL: /api/Usuario/Obtener/{id}
-- Descripción: Obtiene un Usuario específico según su ID.
-### Dar alta a un nuevo usuario
-#### Método: POST
-- URL: /api/Usuario/Guardar
-- Descripción: Crea un nuevo Usuario. Los datos deben proporcionarse en el cuerpo de la solicitud en formato JSON.
-### Modificar un usuario existente
-#### Método: PUT
-- URL: /api/Usuario/{Editar
-- Descripción: Actualiza un usuario existente según su ID. Los nuevos datos deben proporcionarse en el cuerpo de la solicitud en formato JSON.
-### Dar la baja a un usuario
-#### Método: DELETE
-- URL: /api/Usuario/Eliminar/{id}
-- Descripción: Elimina un Usuario existente según su ID.
-## Instalación y configuración
-1. Clona este repositorio en tu máquina local.
+### Get all users
+#### Method: GET
+- URL: /api/User/List
+- Description: Gets all the users that exist in the database.
+### Get a user by their ID
+#### Method: GET
+- URL: /api/User/Get/{id}
+- Description: Obtains a specific User according to his ID.
+### Register a new user
+#### Method: POST
+- URL: /api/User/Save
+- Description: Create a new User. The data must be provided in the request body in JSON format.
+### Modify an existing user
+#### Method: PUT
+- URL: /api/User/{Edit
+- Description: Update an existing user based on their ID. The new data must be provided in the request body in JSON format.
+### Unsubscribe a user
+#### Method: DELETE
+- URL: /api/User/Delete/{id}
+- Description: Delete an existing User according to his ID.
+## Installation and configuration
+1. Clone this repository to your local machine.
 ```
 git clone https://github.com/ramiroquin/PruebaEvoltis.git
 ```
-3. Abre el proyecto con Visual Studio.
-4. Asegúrate de tener instalado .NET, MySql y todas las dependencias necesarias.
-5. Abre el archivo de conexión SQL (appsettings.json).
+3. Open the project with Visual Studio.
+4. Make sure you have .NET, MySql and all necessary dependencies installed.
+5. Open the SQL connection file (appsettings.json).
 ```
-   "ConnectionStrings": {
-    "ConexionSql": "Cambia_Aquí_Tu_Cadena_De_Conexión_SQL"
+    "ConnectionStrings": {
+     "SqlConnection": "Change_Here_Your_SQL_Connection_String"
 }
 ```
-5. Cambia la cadena de conexión para que apunte a tu base de datos local.
-6. Presiona el botón de "Iniciar depuración" (F5) o "Iniciar sin depuración" (Ctrl+F5) para ejecutar la aplicación.
+5. Change the connection string to point to your local database.
+6. Press the "Start debugging" (F5) or "Start without debugging" (Ctrl+F5) button to run the application.
